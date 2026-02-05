@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Lecture 11</title>
+    <style>
+      :root {
+        --btn-gradient: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+        --btn-font: "Inter", system-ui, -apple-system, sans-serif;
+        --btn-padding: 14px 28px;
+        --btn-radius: 50px;
+      }
+
+      .gradient-btn {
+        font-family: var(--btn-font);
+        font-size: 1rem;
+        font-weight: 600;
+        padding: var(--btn-padding);
+        cursor: pointer;
+        border: none;
+        color: white;
+        background: var(--btn-gradient);
+        background-size: 200% auto;
+        border-radius: var(--btn-radius);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        outline: none;
+      }
+
+      .gradient-btn:hover {
+        background-position: right center;
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4);
+      }
+
+      .gradient-btn:active {
+        transform: translateY(0) scale(0.98);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="gradient-btn">Explore Now</button>
+
+    <script src="" async defer></script>
+  </body>
+</html>

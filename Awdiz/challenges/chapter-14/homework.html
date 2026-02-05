@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Homework - align-self Demo</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+
+      .pricing {
+        display: flex;
+        gap: 20px;
+        width: 90%;
+        max-width: 1200px;
+        height: 400px;
+        background: #ddd;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .card {
+        flex: 1;
+        padding: 30px;
+        background: #fff;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        height: fit-content;
+      }
+
+      .card:nth-child(1) {
+        align-self: flex-start;
+        background: #fff4e6;
+      }
+
+      .card.pro {
+        align-self: flex-end;
+        background: #e8f0ff;
+        flex-grow: 3;
+      }
+
+      .card-strech {
+        background: #e8ffe8;
+      }
+
+      .card-grow {
+        flex-grow: 3;
+        align-self: center;
+        background: #ffe8f5;
+      }
+
+      .card h3 {
+        margin: 0 0 15px 0;
+        color: #333;
+      }
+
+      .card p {
+        margin: 0;
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing">
+      <div class="card">
+        <h3>Basic</h3>
+      </div>
+
+      <div class="card pro">
+        <h3>Pro</h3>
+      </div>
+
+      <div class="card card-strech">
+        <h3>Premium</h3>
+      </div>
+
+      <div class="card card-grow">
+        <h3>Grow</h3>
+      </div>
+    </div>
+  </body>
+</html>

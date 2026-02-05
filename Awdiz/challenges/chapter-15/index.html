@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myntra Header UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #f5f5f5;
+      }
+      .header {
+        background: #fff;
+        border-bottom: 1px solid #eaeaec;
+      }
+      .container {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 12px 28px;
+      }
+      .logo img {
+        height: 42px;
+      }
+      .menu {
+        display: flex;
+        gap: 28px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #282c3f;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.6px;
+      }
+      sup {
+        color: #ff3f6c;
+        font-size: 10px;
+        margin-left: 4px;
+      }
+      .search {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      .search-box {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+      }
+      .search-box input {
+        width: 100%;
+        padding: 10px 12px 10px 40px;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        background: #f5f5f6;
+        font-size: 14px;
+      }
+      .search-box .material-symbols-outlined {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #696e79;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+      .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #282c3f;
+      }
+      .icon .material-symbols-outlined {
+        font-size: 22px;
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="https://i.pinimg.com/1200x/10/8f/fd/108ffd534d2076aa59babdb3b925438d.jpg" />
+        </div>
+
+        <nav class="menu">
+          <a href="#">MEN</a>
+          <a href="#">WOMEN</a>
+          <a href="#">KIDS</a>
+          <a href="#">HOME</a>
+          <a href="#">BEAUTY</a>
+          <a href="#">GENZ</a>
+          <a href="#">STUDIO <sup>NEW</sup></a>
+        </nav>
+
+        <div class="search">
+          <div class="search-box">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search for products, brands and more" />
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="icon">
+            <span class="material-symbols-outlined">person</span>
+            <div>Profile</div>
+          </div>
+          <div class="icon">
+            <span class="material-symbols-outlined">favorite</span>
+            <div>Wishlist</div>
+          </div>
+          <div class="icon">
+            <span class="material-symbols-outlined">shopping_bag</span>
+            <div>Bag</div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

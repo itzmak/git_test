@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+
+    <link rel="stylesheet" href="" />
+    <style>
+      body {
+        height: 9000px;
+        box-sizing: border-box;
+      }
+
+      .box-2 {
+        background-color: blue;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+      }
+
+      .box-2 {
+        border: 3px solid black;
+        display: inline-block;
+      }
+      .absolute {
+        background-color: rgb(255, 140, 0);
+        color: rgb(43, 226, 70);
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        font-size: 30px;
+        border-radius: 10px;
+      }
+      .relative {
+        background-color: bisque;
+        color: blueviolet;
+        position: relative;
+        top: 100px;
+        font-size: 30px;
+        border-radius: 10px;
+      }
+      .box {
+        display: block;
+
+        margin-top: 200px;
+      }
+
+      .secret {
+        visibility: hidden;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-2">2</div>
+    <button class="absolute">absolute</button>
+    <button class="relative">relative</button>
+
+    <div class="box">I am visible</div>
+    <div class="secret">I am hidden</div>
+
+    <script src="" async defer></script>
+  </body>
+</html>

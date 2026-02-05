@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+
+    <link rel="stylesheet" href="" />
+    <style>
+      body {
+        height: 9000px;
+      }
+      .box-1 {
+        background-color: red;
+      }
+      .box-2 {
+        background-color: blue;
+        position: relative;
+        top: 30px;
+        right: 30px;
+        z-index: 2;
+      }
+      .inside {
+        height: 100px;
+        width: 100px;
+        border: 3px solid black;
+        background-color: yellow;
+        top: 10px;
+        left: 10px;
+        position: absolute;
+      }
+      .box-3 {
+        background-color: green;
+        position: fixed;
+        top: 30px;
+        left: 0px;
+      }
+      .box-4 {
+        background-color: rgb(128, 124, 0);
+
+        top: 30px;
+      }
+      .box-1,
+      .box-2,
+      .box-3,
+      .box-4 {
+        height: 200px;
+        width: 200px;
+        border: 3px solid black;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-1">1</div>
+    <div class="box-2"><div class="inside">Inside</div></div>
+    <div class="box-3">3</div>
+    <div class="box-4">4</div>
+    <script src="" async defer></script>
+  </body>
+</html>

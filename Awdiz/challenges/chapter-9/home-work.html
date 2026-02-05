@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box Model</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 150px;
+        background: #ecf0f1;
+      }
+
+      .box-one {
+        padding: 20px;
+        margin: 20px;
+        border: 4px solid #3498db;
+        box-sizing: content-box;
+      }
+
+      .box-two {
+        padding: 20px;
+        margin: 20px;
+        border: 4px dashed #e67e22;
+        box-sizing: border-box;
+      }
+
+      .box-three {
+        padding: 30px;
+        margin: 30px;
+        border: 6px double #e74c3c;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-one">Content Box</div>
+    <div class="box box-two">Border Box</div>
+    <div class="box box-three">Border Box 2</div>
+  </body>
+</html>
